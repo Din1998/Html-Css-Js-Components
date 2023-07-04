@@ -1,0 +1,38 @@
+body{
+  background-color:aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.eye-box{
+  display: flex;
+}
+
+.eye-box .eye{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin: 0px 20px;
+  box-shadow: 0 5px 24px rgba(0,0,0,0.2),
+              inset 0 0 15px #f2761e,
+              inset 0 0 15px #f2761e;
+}
+
+.eye-box .eye::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translate(-50%,-50%);
+  border: 8px solid rgb(155, 155, 221);
+  box-sizing: border-box;
+}
